@@ -61,9 +61,16 @@ api.createWidget("banner-box-widget", {
 
     console.log("settings for widget",settings.has_expiry_date);
 
-    return [
+    if(settings.has_expiry_date){
+      // check if the date in text box is greater than current date
+      const currentDate = new Date();
+      console.log("current date is",currentDate);
+
+      // if currentDate is greater
+      return [
         h('div.container')
       ]
+    }
 
     let urlMatch;
     if(settings.url_must_contain.length) {
