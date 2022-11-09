@@ -59,6 +59,8 @@ api.createWidget("banner-box-widget", {
       showOnHomepage = path === "/";
     }
 
+    console.log("settings for widget",settings)
+
     let urlMatch;
     if(settings.url_must_contain.length) {
       const allowedPaths = settings.url_must_contain.split("|");
