@@ -61,6 +61,10 @@ api.createWidget("banner-box-widget", {
 
     console.log("settings for widget",settings)
 
+    return [
+        h('div.container')
+      ]
+
     let urlMatch;
     if(settings.url_must_contain.length) {
       const allowedPaths = settings.url_must_contain.split("|");
