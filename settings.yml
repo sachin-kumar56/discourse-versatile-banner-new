@@ -3,6 +3,11 @@ show_for_members:
   default: true
   description:
     en: 'Display the banner for users logged into the forum'
+has_expiry_date:
+  type: bool
+  default: true
+  description:
+    en: 'Expiry date for the banner'
 show_for_anon:
   type: bool
   default: true
