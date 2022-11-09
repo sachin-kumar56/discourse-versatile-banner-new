@@ -227,6 +227,7 @@ api.createWidget("banner-content-widget", {
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/below-site-header/banner-themes">
+  {{log theme-setting}}
   {{#if (theme-setting 'show_for_members')}}
     {{#if currentUser}}
       {{plugin-outlet name="custom-banner" tagName="span" connectorTagName="div"}}

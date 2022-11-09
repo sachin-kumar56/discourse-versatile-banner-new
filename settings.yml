@@ -8,6 +8,11 @@ has_expiry_date:
   default: true
   description:
     en: 'Expiry date for the banner'
+expiry_date:
+  type: string
+  default: ""
+  description:
+    en: 'Date string to check.'
 show_for_anon:
   type: bool
   default: true
